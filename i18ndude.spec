@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 Summary:	Tool for .pot convert
 Summary(pl):	Narzêdzie do konwersji plików .pot
 Name:		i18ndude
