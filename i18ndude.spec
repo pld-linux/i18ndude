@@ -32,11 +32,8 @@ cp -af %{name}/{c*.py,*.pt,o*.py,r*.py,u*.py,v*.py} $RPM_BUILD_ROOT%{py_sitescri
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%postun
-rm -rf %{py_sitescriptdir}/{catalog.pyc,common.pyc,odict.pyc,untranslated.pyc,visualisation.pyc}
-
 %files
 %defattr(644,root,root,755)
 %doc %{name}/{README.txt,TODO.txt}
 %attr(755,root,root) %{_bindir}/*
-%{py_sitescriptdir}
+%{py_sitescriptdir}/*.py*
