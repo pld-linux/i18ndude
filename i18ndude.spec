@@ -7,6 +7,7 @@ License:	GPL
 Group:		Base/Utilities
 Source0:	http://dl.sourceforge.net/plone-i18n/%{name}.tar.gz
 # Source0-md5:	aec7a85b2c9b99180e89417f58ce96bc
+# Source0-size:	21872
 URL:		http://sourceforge.net/projects/plone-i18n/
 Requires:	python-PyXML
 BuildArch:	noarch
@@ -35,6 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{name}/{README.txt,TODO.txt}
+%doc %{name}/{ChangeLog,README.txt,TODO.txt}
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/*.py*
