@@ -3,7 +3,7 @@ Summary:	Tool for .pot convert
 Summary(pl):	Narzêdzie do konwersji plików .pot
 Name:		i18ndude
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base/Utilities
 Source0:	http://dl.sourceforge.net/plone-i18n/%{name}.tar.gz
@@ -27,7 +27,9 @@ i18ndude jest narzêdziem do konwersji plików .pot.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{_sbindir}
-cp -af %{name}/{*.py,*.pt} $RPM_BUILD_ROOT/%{_sbindir}
+install -d $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}
+cp -af %{name}/i18ndude.py $RPM_BUILD_ROOT/%{_sbindir}
+cp -af %{name}/{c*.py,*.pt,o*.py,r*.py,u*.py,v*.py} $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -36,3 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{name}/{README.txt,TODO.txt}
 %attr(755,root,root) %{_sbindir}/*
+%{py_sitescriptdir}/%{name}
