@@ -1,5 +1,5 @@
 Summary:	Tool for .pot convert
-Summary(pl):	Narzêdzie do konwersji plików .pot
+Summary(pl.UTF-8):   NarzÄ™dzie do konwersji plikÃ³w .pot
 Name:		i18ndude
 Version:	0.5
 Release:	1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 i18ndude is a tool for .pot convert.
 
-%description -l pl
-i18ndude jest narzêdziem do konwersji plików .pot.
+%description -l pl.UTF-8
+i18ndude jest narzÄ™dziem do konwersji plikÃ³w .pot.
 
 %prep
 %setup -q -c %{name}-%{ver}
