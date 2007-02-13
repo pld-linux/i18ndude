@@ -1,5 +1,5 @@
 Summary:	Tool for .pot convert
-Summary(pl.UTF-8):   Narzędzie do konwersji plików .pot
+Summary(pl.UTF-8):	Narzędzie do konwersji plików .pot
 Name:		i18ndude
 Version:	0.5
 Release:	1
